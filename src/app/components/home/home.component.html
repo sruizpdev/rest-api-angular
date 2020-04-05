@@ -1,1 +1,22 @@
-<p>home works!</p>
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">e-mail</th>
+        <th scope="col">Avatar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of newData">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.first_name}}</td>
+        <td>{{item.last_name}}</td>
+        <td>{{item.email}}</td>
+        <td><img [src]="item.avatar"></td>
+      </tr>
+    </tbody>
+  </table>
+ 
